@@ -2,12 +2,26 @@
 <html lang = "en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>This is a refresher of my knowledge! </title>
 
     <style>
-        #turtle{color:blue; text-align: center; font-size: 100px}
+        #turtle{color:blue; text-align: center; text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
         #picture{text-align: center;}
-        h2{color:red}
+        h2{color:red;  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+        #audioControls{text-align: center;}
+        #background{background-color: grey;  margin-left: 100px; margin-right: 100px; padding-bottom: 100px;}
         
 
 
@@ -19,12 +33,14 @@
 
 <body>
 
+<div id = "background">
 
+    <div id = "audioControls">
     <audio controls autoplay loop>
         <source src="Music/Im_Yours.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-
+</div>
  
 
     <div><h1 id = "turtle">13/05/21</h1></div>
@@ -38,7 +54,7 @@
     </div>
 
 
-
+</div>
 
 </body>
 
